@@ -1,0 +1,33 @@
+ques-1
+#include <iostream>
+
+using namespace std;
+void isPrime(int);
+int main()
+{
+    int x;
+    cout<<"Enter a number";
+    cin>>x;
+    isPrime(x);
+    return 0;
+}
+void isPrime(int x)
+{
+    int i;
+    if(x<=1)
+    cout<<"Not prime number";
+    else{
+         for(i=2;i<x;i++)
+    {
+
+        if(x%i==0)
+            break;
+    }
+        if(i==x)
+            cout<<endl<<"Prime Number";
+        else
+            cout<<endl<<"not prime number";
+    }
+
+
+}
